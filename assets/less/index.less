@@ -1,0 +1,110 @@
+nav {
+	background: #1420dc;
+	-webkit-box-shadow: 2px 3px 5px 3px rgba(13, 21, 142, 1);
+	-moz-box-shadow: 2px 3px 5px 3px rgba(13, 21, 142, 1);
+	box-shadow: 2px 3px 5px 3px rgba(13, 21, 142, 1);
+}
+body {
+	background: #eee;
+	font-family: "Montserrat", sans-serif;
+}
+
+.note {
+	background: #fff;
+	padding: 20px;
+	height: 200px;
+	box-shadow: 1px 1px rgba(0, 0, 0, 0.15);
+	position: relative;
+
+	.delete-form {
+		position: absolute;
+		bottom: 10px;
+		right: 10px;
+	}
+
+	.edit-form-title,
+	.edit-form-description {
+		input[type="text"],
+		textarea {
+			border: 0;
+
+			&:focus {
+				box-shadow: none;
+			}
+		}
+
+		input[type="text"] {
+			font-size: 2rem;
+		}
+
+		textarea {
+			font-size: 1rem;
+		}
+	}
+}
+
+.navbar-light {
+	.navbar-brand {
+		color: #fff;
+		font-family: "McLaren", cursive;
+	}
+}
+
+.btn-primary {
+	background: #1420dc;
+	border-color: #1420dc;
+}
+
+.btn-primary:hover {
+	background: #1724ea;
+	border-color: #1724ea;
+}
+
+.btn-circle {
+	width: 40px;
+	height: 40px;
+	padding: 0px 0px;
+	border-radius: 35px;
+	font-size: 24px;
+	line-height: 1.33;
+}
+
+.add-note-form {
+	background: #fff;
+	padding: 15px;
+	border-radius: 7px;
+	box-shadow: 0 1px 5px rgb(138 137 137);
+	position: relative;
+
+	input[type="text"],
+	textarea {
+		border: 0;
+
+		&:focus {
+			box-shadow: none;
+		}
+	}
+
+	textarea {
+		resize: none;
+	}
+
+	.add-note-button {
+		// float: right;
+		position: absolute;
+		right: 14px;
+		bottom: -22px;
+	}
+}
+
+.clear-fix {
+	clear: both;
+}
+
+.note-alert {
+	display: none;
+}
+
+.modal-content {
+	border: none;
+}
